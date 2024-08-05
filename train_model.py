@@ -12,7 +12,7 @@ def load_images(image_dir, mask_dir, img_size=(256, 256)):
     masks = []
     
     for img_filename in os.listdir(image_dir):
-        if img_filename.endswith(('.png', '.jpg', '.jpeg')):
+        if img_filename.endswith(('.png')):
             # Load and resize image
             img_path = os.path.join(image_dir, img_filename)
             img = Image.open(img_path).convert('RGB').resize(img_size)  # Ensure image is RGB

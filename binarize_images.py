@@ -41,7 +41,7 @@ def process_directory(input_dir, output_dir, threshold=0):
 
     # Process each image in the input directory
     for filename in os.listdir(input_dir):
-        if filename.lower().endswith(('.png', '.jpg', '.jpeg')):
+        if filename.lower().endswith(('.png')):
             input_image_path = os.path.join(input_dir, filename)
             output_image_path = os.path.join(output_dir, filename)
 
